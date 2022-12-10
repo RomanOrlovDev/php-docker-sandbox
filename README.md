@@ -1,6 +1,6 @@
 # A boilerplate to run Docker containers for PHP development
 
-It includes Nginx, Xdebug, Composer and PHP by itself.
+It includes Nginx, Xdebug, Composer, Git and PHP by itself.
 
 Run docker compose:
 ```

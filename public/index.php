@@ -1,4 +1,4 @@
 <?php
-// for checking xdebug state call:
+// for troubleshooting xdebug execute:
 // xdebug_info();
 phpinfo();
