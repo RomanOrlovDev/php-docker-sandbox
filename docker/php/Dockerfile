@@ -12,4 +12,5 @@ COPY --from=composer:2.4.4 /usr/bin/composer /usr/local/bin/composer
 RUN touch /var/log/xdebug.log
 RUN chmod 666 /var/log/xdebug.log
 
-VOLUME ["/app"]
+WORKDIR "/app"
+
