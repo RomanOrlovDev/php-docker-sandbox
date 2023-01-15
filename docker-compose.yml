@@ -15,8 +15,11 @@ services:
     build:
       context: .
       dockerfile: docker/php/Dockerfile
+    user: ${MY_UID}:${MY_GID}
     expose:
       - "9888:9000"
     volumes:
       - ./public:/app
       - ./docker/php/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      - /etc/passwd:/etc/passwd:ro
+      - /etc/group:/etc/group:ro

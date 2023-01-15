@@ -12,8 +12,8 @@ RUN apt-get update && \
     pecl install xdebug-3.1.2 && \
     docker-php-ext-enable xdebug
 
-RUN adduser --system --no-create-home --group roman
-USER roman
+#RUN adduser --system --no-create-home --group phpuser
+#USER phpuser
 
 WORKDIR "/app"
 
